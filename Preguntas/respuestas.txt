@@ -1,0 +1,68 @@
+A. ¿Cuál es el peso del carro1? Argumente su respuesta.
+RTA/
+
+ El peso de carro1 es 1 tonelada, ya que se usa el valor
+ predeterminado en el constructor.
+
+-----------------------------------------------------------
+
+B. ¿Cuál es el motor del carro3? Argumente su respuesta.
+RTA/
+
+El motor de carro3 es None, ya que no se especificó un 
+motor al crear el objeto.
+
+-----------------------------------------------------------
+
+C. ¿Cuál es la marca del carro0 (En caso de que este no 
+estuviera comentado en la línea 30)? Justifique lo que sucede.
+RTA/
+
+No se puede determinar la marca del carro0 porque el objeto 
+no se crea (está comentado). Si el objeto se hubiera creado, 
+la marca sería "Ford", que es el valor predeterminado.
+
+-----------------------------------------------------------
+
+D. ¿Qué imprime la línea 35? Justifique
+
+- Modifique el inicializador de la clase de la siguiente
+  manera:  
+
+Linea Original:
+ def __init__ (self, referencia, peso = 1, marca = "Ford", motor = None):
+
+Linea Nueva:
+  def __init__ (self, referencia, peso = 4, marca = "Ford", motor = None):
+
+RTA/
+
+El método carro_mas_pesado busca el carro más pesado de
+una lista de objetos Carro.
+
+La línea 35 imprime "Sandero Stepway", que es la referencia del 
+carro2, ya que este tiene el peso más alto.
+
+
+-----------------------------------------------------------
+
+E. ¿Qué imprime la línea 35 después del cambio? 
+   Argumente su respuesta
+
+RTA/
+
+La línea 35 imprimiría "Tracker" (el carro con más peso, que
+es carro1 ahora con 4 toneladas).
+
+-----------------------------------------------------------
+
+F. ¿Cómo modificar el inicializador de Carro, para que pueda 
+   recibir un número indefinido de parámetros?
+
+RTA/
+
+Para permitir que el inicializador reciba un número indefinido
+de parámetros, puedes usar *args en el método __init__. Los 
+parámetros pasados a través de *args se almacenan en una tupla,
+lo que permite que el método maneje cualquier cantidad de 
+argumentos adicionales.
